@@ -22,7 +22,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
-	background: #626262;
+	background: #CCC;
 }
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
@@ -391,15 +391,14 @@ article > hr {
 	font-family: 'Capriola', sans-serif;
     text-size: 12px;
 }
+a.titlename{
+    text-decoration: none;
+	color: #FFF;
+}
 .titlename{
     font-family: 'Skranji', cursive;
     text-size: 18px;
     color: #FFF;
-}
-
-a.titlename{
-    text-decoration: none;
-	color: #FFF;
 }
 .cover {
     width: 80px;
