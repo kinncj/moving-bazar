@@ -1,12 +1,16 @@
 About
 ===================
 
- _**Moving Bazar**_ is an Application for persons who are moving and whant to sell your things.
+ _**Moving Bazar**_ is an Application for persons who are moving and want to sell your things.
  
 Requirements
 ===================
 
  PHP 5.3
+ 
+ HTTP SERVER (apache, nginx, etc)
+ 
+ mod_rewrite (another rewrite engine). Take a look at the .htaccess file
  
 
 Usage
