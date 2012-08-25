@@ -4,10 +4,6 @@ use MovingBazar\Model\Product as ProductVO;
 
 use MovingBazar\Repository\Product as ProductRepository;
 
-require_once 'public/bootstrap.php';
-
-require_once 'PHPUnit/Framework/TestCase.php';
-
 /**
  * Product test case.
  */
@@ -60,9 +56,9 @@ class ProductTest extends PHPUnit_Framework_TestCase
                 ->setQuantity(1)
                 ->setDescription("Personal computer from unit test")
                 ->setFullpath(
-                        "/Users/kinncj/Documents/github/moving-bazar/public/../tests/products/Computer")
+                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer")
                 ->setPicture(
-                        "/Users/kinncj/Documents/github/moving-bazar/public/../tests/products/Computer/oldpc.jpeg");
+                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer/oldpc.jpeg");
 
         $expectedProducts = array($firstProductVo, $secondProductVo);
         $this->assertEquals($expectedProducts, $this->Product->findAll());
@@ -79,9 +75,9 @@ class ProductTest extends PHPUnit_Framework_TestCase
                 ->setQuantity(1)
                 ->setDescription("Personal computer from unit test")
                 ->setFullpath(
-                        "/Users/kinncj/Documents/github/moving-bazar/public/../tests/products/Computer")
+                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer")
                 ->setPicture(
-                        "/Users/kinncj/Documents/github/moving-bazar/public/../tests/products/Computer/oldpc.jpeg");
+                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer/oldpc.jpeg");
 
         $this->assertEquals($expectedProduct, $this->Product->findByName("Computer"));
 
