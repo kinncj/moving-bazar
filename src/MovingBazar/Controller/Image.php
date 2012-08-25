@@ -19,9 +19,9 @@ class Image extends AbstractController
     		$imagick = new \Imagick($image);
     		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true);
     		$imagick->writeimage($cachePath);
-    		$image = $cachePath;
+    		$cachePath;
     	}
-    	readfile($image);
+    	readfile($cachePath);
     	exit;
     }
 }
