@@ -16,7 +16,7 @@ class Contact extends AbstractController
     {
     	$mailSettings = (object) parse_ini_file(CONFIG_PATH.'email.ini');
     
-    	if ($_POST['csrf'] != $_SESSION['csrf']) {
+    	if ($_POST['csrf'] != $_SESSION['CSRF']) {
     		$this->render('contact/error.html');
     		die();
     	}
