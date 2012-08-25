@@ -4,7 +4,7 @@
                 <ul id="products">
                 {% for product in chunked %}
                     <li class='product'>
-                        <a href="/product/{{ product.lastPath }}">
+                        <a href="/product/{{ product.lastpath }}">
                             <img src="/image/{{ product.picture }}" class="cover" />
                             <label class="label">{{product.name}}</label>
                         </a>

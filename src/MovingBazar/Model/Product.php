@@ -8,7 +8,7 @@ class Product
     private $picture;
     private $description;
     private $fullpath;
-    public $lastPath;
+    private $lastpath;
 	/**
 	 * @return the $name
 	 */
@@ -48,9 +48,14 @@ class Product
 	 * @return the $fullpath
 	 */
 	public function getFullpath() {
-		$parts = explode('/', $this->fullpath);
-		$this->lastPath = array_pop($parts);
 		return base64_encode($this->fullpath);
+	}
+	
+	/**
+	 * @return the $fullpath
+	 */
+	public function getLastpath() {
+		return $this->lastpath;
 	}
 
 	/**
@@ -97,6 +102,8 @@ class Product
 	 * @param field_type $fullpath
 	 */
 	public function setFullpath($fullpath) {
+		$parts = explode('/', $fullpath);
+		$this->lastpath = array_pop($parts);
 		$this->fullpath = $fullpath;
 		return $this;
 	}
