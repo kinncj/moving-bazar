@@ -28,7 +28,7 @@ class Contact extends AbstractController
                 ->setSubject($_POST['subject']);
     	switch($message->isValid()) {
     	    case true:
-    	        mail($mail->address, $mail->subject, $message);
+    	        mail($mailSettings->address, $mailSettings->subject, $message);
     	        $this->render('contact/success.html');
     	        break;
     	    default:
