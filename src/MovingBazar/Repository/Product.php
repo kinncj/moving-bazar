@@ -33,7 +33,6 @@ class Product
     protected function getProduct($directory)
     {
         $directoryPath = $directory;
-        var_dump($directoryPath);exit;
         $directory = new \DirectoryIterator($directoryPath);
         $productVO = new ProductVO();
         $name = $directory->getBasename();
