@@ -13,8 +13,8 @@ class Image extends AbstractController
     	if (!file_exists('/tmp'.$image)) {
     		$imagick = new \Imagick($image);
     		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true);
-    		$imagick->writeimage('/tmp'.$image);
-    		$image = '/tmp'.$image;
+    		$imagick->writeimage(ROOT_PATH.'cache/'.$image);
+    		$image = ROOT_PATH.'cache/'.$image;
     	}
     	readfile($image);
     	exit;
