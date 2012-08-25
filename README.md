@@ -1,7 +1,7 @@
 About
 ===================
 
- *_Moving Bazar_* is an Application for persons who are moving and whant to sell your things.
+ _**Moving Bazar**_ is an Application for persons who are moving and whant to sell your things.
  
 Requirements
 ===================
@@ -12,7 +12,7 @@ Requirements
 Usage
 ===================
 
- *_Moving basar_* was developed to running in any shared hosting.
+ _**Moving basar**_ was developed to running in any shared hosting.
  
  This way, we do not use a database. All data is listed from text files.
  
@@ -44,14 +44,14 @@ Usage
 Contribute
 ===================
 
- This is an *OpenSource* software, so _feel free to *contribute*_...
+ This is an **OpenSource** software, so _feel free to **contribute**_...
  
 Next steps
 ===================
 
  Create an Admin area to provice a usefull interface to add new products
  Add new datasources like NoSQL, Relational databases, json files, and others.
-  Contribute with us *;)*
+  Contribute with us **;)**
   
 License Information
 ===================
