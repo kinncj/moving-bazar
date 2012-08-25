@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-    {% block article-content %}
+    {% block content %}
             {% for chunked in products %}
                 <ul id="products">
                 {% for product in chunked %}
@@ -13,4 +13,4 @@
                 </ul>
             {% endfor %}
             
-    {% endblock article-content %}
+    {% endblock %}
