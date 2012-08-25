@@ -391,9 +391,8 @@ article > hr {
 	font-family: 'Capriola', sans-serif;
     text-size: 12px;
 }
-a.titlename{
-    text-decoration: none;
-	color: #FFF;
+a{
+	text-decoration: none;
 }
 .titlename{
     font-family: 'Skranji', cursive;
