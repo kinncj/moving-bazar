@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
     {% block content %}
-            {% for chunked in products %}
-                <ul id="products">
-                {% for product in chunked %}
-                    <li class='product'>
-                        <a href="/product/{{ product.lastpath }}">
-                            <img src="/image/{{ product.picture }}" class="cover" />
-                            <label class="label">{{product.name}}</label>
-                        </a>
-                    </li>
-                {% endfor %}
-                </ul>
-            {% endfor %}
-            
+    <main>
+    {% for product in products %}
+    <div class="abox">
+      <figure>
+	      <fcapion>
+	        <h1>{{ product.name }}</h1>
+	      </fcaption>
+	      <a href="/product/{{ product.name }}"></a><a href="#">
+	        <img src="/image/{{ product.picture }}" alt="{{ product.name }}" width="289" height="175" />
+	      </a>
+       </figure>
+      </div>
+    {% endfor %}
+    </main>     
     {% endblock %}

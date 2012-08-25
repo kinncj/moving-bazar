@@ -1,20 +1,11 @@
 {% extends 'base.html' %}
     {% block content %}
-        <div class="product">   
-            <div id="product">
-                <ul class="label">
-                    <li>
-                        {{ product.name }}
-                    </li>
-                    <li>
-                        $ {{ product.amount }}
-                    </li>
-                    <li>
-                        {{ product.description }}
-                    </li>
-                </ul>
-            </div>
-            <img id="big_pictures" src="/image/{{ product.picture }}" />
-        </div>
-            
+	    <middle>    
+	      <div class="enter"><p>{{ product.description }}<br></p>
+	        <div class="imgteaser">
+	           <a href="#"><img src="/image/{{ product.picture }}" alt="Todo el Todo" width="413" height="220" /><span class="desc">
+	           <strong>{{ product.name }}</strong>
+	           ${{ product.amount }}.</span></a></div><div class="btn"></div>
+	      </div>    
+	    </middle>  
     {% endblock %}

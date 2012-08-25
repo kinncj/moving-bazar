@@ -1,9 +1,14 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+  <head>
+    <title>Moving Bazar</title>
+ <style type="text/css">
+<!--
+body {
+    background-image: url(images/bg.png);
+    
+}
+-->
+ </style>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,36 +19,84 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="stylesheet" href="/css/style.css?v=2">
+    <link rel="shortcut icon" href="/imgages/favicon.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style9.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />    
+    <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+		<!--
+		.Stile1 {color: #333333}
+		-->
+    </style>
 
     <script src="/js/modernizr.js"></script>
 </head>
-<body>
-    <div id="header-container">
-        <header class="wrapper">
-            <h1 class="titlename"><a class="titlename" href="http://github.com/kinncj/moving-bazar">Moving Bazar</a></h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Products</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+<!--start container -->
+<div id="container">
+<header>
+    <nav>   
+      <div id="logo"><a href="#"><img src="images/logo.png" alt="Logo here" /></a>      </div>
+      
+      <div id="search-top">
+   <form method="post" action="#">
+  <input type="text" onFocus="if(this.value=='Search')this.value='';" onBlur="if(this.value=='')this.value='Search';" value="Search"  id="search-field"/>
+  <input type="submit" value="" id="search-btn"/>
+  </form> 
+      </div>  
+      <div id="nav_social"><a href="#"><img src="images/facebook_32.png" alt="Become a fan" width="32" height="32" /></a><a href="#"><img src="images/twitter_32.png" alt="Follows on Twitter" /></a><a href="#"><img src="images/linkedin_32.png" alt="Linked in" /></a><a href="#"><img src="images/email_32.png" alt="Contact" width="32" height="32" /></a> </div>
+  </nav>
+  
+    </header>
+
+<div class="content">
+
+          <ul class="ca-menu">
+                    <li>
+                        <a href="contact">
+                            <span class="ca-icon">A</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Contact...</h2>
+                                <h3 class="ca-sub">... me by email</h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="/contact">
+                            <span class="ca-icon">I</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Products...</h2>
+                                <h3 class="ca-sub">... that I want to sell</h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="/about">
+                            <span class="ca-icon">C</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">About</h2>
+                                <h3 class="ca-sub">Why I'm selling my stuffs? </h3>
+                            </div>
+                        </a>                    </li>
+                    <li>
+                        <a href="http://www.github.com/kinncj/moving-bazar" target="_blank">
+                            <span class="ca-icon">S</span>
+                            <div class="ca-content">
+                                <h2 class="ca-main">Fork this project</h2>
+                                <h3 class="ca-sub">And help us improve this tool</h3>
+                            </div>
+                        </a>                    </li>
                 </ul>
-            </nav>
-        </header>
-    </div>
-    <div id="main" class="wrapper">
-        <article>
             {% block content %}
-            <h3>A smaller heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra. Pellentesque auctor neque quis nisl lacinia id rutrum lacus venenatis.</p>
-            <h3>A smaller heading</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra. Pellentesque auctor neque quis nisl lacinia id rutrum lacus venenatis.</p>
             {% endblock %}
-        </article>
-    </div>
     <div id="footer-container">
         <footer class="wrapper">
+            <summary>
+                <p>
+                    <a href="http://www.kinncj.com.br" target="_blank">
+                        Copyright &copy; kinncj.com.br -2011.
+                    </a>
+                </p>
+            </summary>
+            <a href="http://imediacreatives.it">Imediacreatives.it</a>
         </footer>
     </div>
     <script src="//code.jquery.com/jquery-1.8.0.min.js"></script>

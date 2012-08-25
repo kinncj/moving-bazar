@@ -7,6 +7,6 @@ class Page extends AbstractController
     public function get()
     {
     	$products = new ProductRepository;
-    	$this->render('page/index.html', array('products'=> array_chunk($products->findAll(), 4, true)));
+    	$this->render('page/index.html', array('products'=> $products->findAll()));
     }
 }
