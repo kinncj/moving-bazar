@@ -13,6 +13,7 @@ define('CACHE_PATH', ROOT_PATH.'cache/');
 define('PRODUCTS_PATH', ROOT_PATH.'products/');
 
 define('DEBUG', false);
+set_include_path(ROOT_PATH);
 
 spl_autoload_register(
     function($className)
