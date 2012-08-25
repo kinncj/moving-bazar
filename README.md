@@ -1,7 +1,7 @@
 About
 ===================
 
- Moving Bazar is an Application for persons who are moving and what to sell your things.
+ Moving Bazar is an Application for persons who are moving and whant to sell your things.
  
 Requirements
 ===================
