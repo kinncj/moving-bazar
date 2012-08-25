@@ -51,8 +51,7 @@ class ProductTest extends PHPUnit_Framework_TestCase
     public function testFindAll()
     {
         $firstProductVo = new ProductVO;
-        $secondProductVo = clone $firstProductVo;
-        $secondProductVo->setName("Personal computer")->setAmount(120.30)
+        $firstProductVo->setName("Personal computer")->setAmount(120.30)
                 ->setQuantity(1)
                 ->setDescription("Personal computer from unit test")
                 ->setFullpath(
@@ -60,7 +59,7 @@ class ProductTest extends PHPUnit_Framework_TestCase
                 ->setPicture(
                         ROOT_PATH."tests/products/Computer/oldpc.jpeg");
 
-        $expectedProducts = array($firstProductVo, $secondProductVo);
+        $expectedProducts = array($firstProductVo);
         $this->assertEquals($expectedProducts, $this->Product->findAll());
 
     }
