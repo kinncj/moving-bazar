@@ -1,0 +1,2 @@
+default:
+	@phpunit tests/unit/

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+    {% block article-content %}
+        <div class="product">   
+            <div id="product">
+                <ul class="label">
+                    <li>
+                        {{ product.name }}
+                    </li>
+                    <li>
+                        $ {{ product.amount }}
+                    </li>
+                    <li>
+                        {{ product.description }}
+                    </li>
+                </ul>
+            </div>
+            <img id="big_pictures" src="/image/{{ product.picture }}" />
+        </div>
+            
+    {% endblock article-content %}

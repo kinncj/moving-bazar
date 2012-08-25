@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+    {% block article-content %}
+            {% for chunked in products %}
+                <ul id="products">
+                {% for product in chunked %}
+                    <li class='product'>
+                        <a href="/product/{{ product.lastPath }}">
+                            <img src="/image/{{ product.picture }}" class="cover" />
+                            <label class="label">{{product.name}}</label>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            {% endfor %}
+            
+    {% endblock article-content %}
