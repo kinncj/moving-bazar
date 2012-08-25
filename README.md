@@ -1,11 +1,17 @@
-###### About
+About
+===================
 
  Moving Bazar is an Application for persons who are moving and what to sell your things.
  
-###### Requirements
+Requirements
+===================
+
  PHP 5.3
  
-###### Usage
+
+Usage
+===================
+
  Moving basar was developed to running in any shared hosting.
  
  This way, we do not use a database. All data is listed from text files.
@@ -34,10 +40,15 @@
  This way we will have a Computer product with "Personal Computer" name and another values that can be displayed at product details,
  like amount, quantity and description.
  
-###### Contribute
+
+Contribute
+===================
+
  This is an OpenSource software, so feel free to contribute...
  
-###### Next steps
+Next steps
+===================
+
  Create an Admin area to provice a usefull interface to add new products
  Add new datasources like NoSQL, Relational databases, json files, and others.
   Contribute with us *;)*
