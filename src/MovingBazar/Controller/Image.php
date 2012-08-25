@@ -11,7 +11,7 @@ class Image extends AbstractController
     	$mime = $finfo->file($image);
     	header('Content-type: '.$mime);
     	$parts = explode(DIRECTORY_SEPARATOR, $image);
-    	$lastPart = array_pop($image);
+    	$lastPart = array_pop($parts);
     	$path = implode(DIRECTORY_SEPARATOR, $parts);
     	$cacheImage = 'cache_'.$lastPart;
     	$cachePath = $path.'/'.$cacheImage;
