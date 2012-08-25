@@ -17,7 +17,7 @@ class Image extends AbstractController
     	$cachePath = $path.'/'.$cacheImage;
     	if (!file_exists($cachePath)) {
     		$imagick = new \Imagick($image);
-    		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true);
+    		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true, true);
     		$imagick->writeimage($cachePath);
     		$cachePath;
     	}
