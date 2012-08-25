@@ -393,3 +393,6 @@ article > hr {
 	font-family: 'Skranji', cursive;
     text-size: 18px;
 }
+#cover {
+    width: 80px;
+}
