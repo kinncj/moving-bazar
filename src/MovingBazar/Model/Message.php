@@ -81,5 +81,6 @@ class Message
     	$message.= "Email: {$this->email}\n";
     	$message.= "Subject: {$this->subject}\n";
     	$message.= "Message: {$this->message}\n";
+    	return $message;
     }
 }
