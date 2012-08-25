@@ -32,10 +32,10 @@ Usage
  
  For the text file, you can use this example above:
  
-  name = Personal computer
-  amount = 120.30
-  quantity = 1
-  description = Personal computer from unit test
+    name = Personal computer
+    amount = 120.30
+    quantity = 1
+    description = Personal computer from unit test
   
  This way we will have a Computer product with "Personal Computer" name and another values that can be displayed at product details,
  like amount, quantity and description.
