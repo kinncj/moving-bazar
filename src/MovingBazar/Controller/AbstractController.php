@@ -1,6 +1,8 @@
 <?php
 namespace MovingBazar\Controller;
-abstract  class AbstractController  
+use Respect\Rest\Routable;
+
+abstract  class AbstractController  implements Routable
 {
   protected $twig;
   
