@@ -19,9 +19,9 @@ abstract  class AbstractController  implements Routable
   
   private function createTwig()
   {
-  	Twig_Autoloader::register();
-  	$loader = new Twig_Loader_Filesystem(SRC_PATH.'MovingBazar/Templates/');
-  	$twig = new Twig_Environment($loader, 
+  	\Twig_Autoloader::register();
+  	$loader = new \Twig_Loader_Filesystem(SRC_PATH.'MovingBazar/Templates/');
+  	$twig = new \Twig_Environment($loader, 
   	    array(
             'cache' => CACHE_PATH,
   	    	'debug' => DEBUG
