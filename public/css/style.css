@@ -159,6 +159,7 @@ input#search-btn{
 }
 footer {
 	background: #ccc;
+	width: 100%;
 	margin: auto;
 	clear: both;
 }
@@ -441,4 +442,24 @@ details {
 -webkit-transform: rotate(-20deg);
 	-moz-transform: rotate(-20deg);
 	margin: 5px;
+}
+body {
+	background-image: url(images/bg.png);
+}
+#logo {
+	font-size: 18px;
+    font-family: 'Rammetto One', cursive;
+    color: #FFF;
+}
+a#logo {
+    text-decoration: none;
+    color: #FFF;
+}
+
+a#:hoverlogo {
+    text-decoration: none;
+    color: #333;
+}
+.product {
+    width: 289px;
 }
