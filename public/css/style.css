@@ -158,10 +158,7 @@ input#search-btn{
 	background:url(../images/search-btn.png) no-repeat center;
 }
 footer {
-	background-image: url(../images/footer_bg.png);
-	background-repeat: repeat-x;
-	height: 400px;
-	width: 100%;
+	background: #ccc;
 	margin: auto;
 	clear: both;
 }
