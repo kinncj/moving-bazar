@@ -65,7 +65,7 @@ class Product
 	 * @param field_type $amount
 	 */
 	public function setAmount($amount) {
-		$this->amount = filter_var($amount, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION | FILTER_FLAG_ALLOW_THOUSAND | FILTER_FLAG);
+		$this->amount = filter_var($amount, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION | FILTER_FLAG_ALLOW_THOUSAND);
 		return $this;
 	}
 
