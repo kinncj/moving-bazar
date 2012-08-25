@@ -94,7 +94,7 @@ class Product
 	 * @param field_type $description
 	 */
 	public function setDescription($description) {
-		$this->description = filter_var($description, FILTER_SANITIZE_STRING);
+		$this->description = nl2br(filter_var($description, FILTER_SANITIZE_STRING));
 		return $this;
 	}
 	

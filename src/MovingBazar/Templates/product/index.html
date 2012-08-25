@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
     {% block content %}
 	    <middle>    
-	      <div class="enter"><p>{{ product.description }}<br></p>
+	      <div class="enter"><p>{{ product.description|raw }}<br></p>
 	        <div class="imgteaser">
 	           <img src="/image/{{ product.picture }}" alt="{{ product.name }}" class="product" />
 	           <span class="desc">
