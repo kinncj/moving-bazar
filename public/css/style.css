@@ -389,10 +389,10 @@ article > hr {
 	font-family: 'Capriola', sans-serif;
     text-size: 12px;
 }
-.title{
+.titlename{
 	font-family: 'Skranji', cursive;
     text-size: 18px;
 }
-#cover {
+.cover {
     width: 80px;
 }
