@@ -56,9 +56,9 @@ class ProductTest extends PHPUnit_Framework_TestCase
                 ->setQuantity(1)
                 ->setDescription("Personal computer from unit test")
                 ->setFullpath(
-                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer")
+                        ROOT_PATH."tests/products/Computer")
                 ->setPicture(
-                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer/oldpc.jpeg");
+                        ROOT_PATH."tests/products/Computer/oldpc.jpeg");
 
         $expectedProducts = array($firstProductVo, $secondProductVo);
         $this->assertEquals($expectedProducts, $this->Product->findAll());
@@ -75,9 +75,9 @@ class ProductTest extends PHPUnit_Framework_TestCase
                 ->setQuantity(1)
                 ->setDescription("Personal computer from unit test")
                 ->setFullpath(
-                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer")
+                        ROOT_PATH."tests/products/Computer")
                 ->setPicture(
-                        "/Users/kinncj/Documents/github/moving-bazar/tests/../tests/products/Computer/oldpc.jpeg");
+                        ROOT_PATH."tests/products/Computer/oldpc.jpeg");
 
         $this->assertEquals($expectedProduct, $this->Product->findByName("Computer"));
 
