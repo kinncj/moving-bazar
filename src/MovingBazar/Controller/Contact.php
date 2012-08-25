@@ -5,15 +5,22 @@ use MovingBazar\Model\Message;
 
 class Contact extends AbstractController
 {
-    public function get($name)
+    public function get()
     {
-    	$this->render('contact/index.html');
+    	$id = md5(uniqid(mt_rand()));
+    	$_SESSION['CSRF'] = $id;
+    	$this->render('contact/index.html', array('csrf' => $id));
     }
     
     public function post()
     {
     	$mailSettings = (object) parse_ini_file(CONFIG_PATH.'email.ini');
     
+    	if ($_POST['csrf'] != $_SESSION['csrf']) {
+    		$this->render('contact/error.html');
+    		die();
+    	}
+    	
         $message = new Message();
         $message->setEmail($_POST['email'])
                 ->setMessage($_POST['message'])
