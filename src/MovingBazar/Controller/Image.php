@@ -10,6 +10,12 @@ class Image extends AbstractController
     	$finfo = new \finfo(FILEINFO_MIME);
     	$mime = $finfo->file($image);
     	header('Content-type: '.$mime);
+    	if (!file_exists('/tmp'.$image)) {
+    		$imagick = new \Imagick($image);
+    		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true);
+    		$imagick->writeimage('/tmp'.$image);
+    		$image = '/tmp'.$image;
+    	}
     	readfile($image);
     	exit;
     }
