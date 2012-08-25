@@ -21,7 +21,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
+body {
+	background: #626262;
+}
 blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after { content: ''; content: none; }
@@ -390,9 +392,26 @@ article > hr {
     text-size: 12px;
 }
 .titlename{
-	font-family: 'Skranji', cursive;
+    font-family: 'Skranji', cursive;
     text-size: 18px;
+    color: #FFF;
+}
+
+a.titlename{
+    text-decoration: none;
+	color: #FFF;
 }
 .cover {
     width: 80px;
+}
+footer {
+    font-family: 'Capriola', sans-serif;
+    text-size: 12px;
+    color: #FFF;
+}
+
+a {
+    font-family: 'Capriola', sans-serif;
+    text-size: 12px;
+    color: #CCC;
 }
