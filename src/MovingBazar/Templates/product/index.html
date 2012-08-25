@@ -1,13 +1,9 @@
 {% extends 'base.html' %}
     {% block content %}
 	    <middle>    
-	      <div class="enter"><p>{{ product.description|raw }}<br></p>
+	      <div class="enter"><p>{{ product.description|raw }}<br/>$<b>{{ product.amount }}</b><br/><strong>{{ product.name }}</strong></p>
 	        <div class="imgteaser">
 	           <img src="/image/{{ product.picture }}" alt="{{ product.name }}" class="product" />
-	           <span class="desc">
-	               <strong>{{ product.name }}</strong>
-	               $ <b>{{ product.amount }}</b>
-	           </span>
 	        </div>
 	      </div>    
 	    </middle>  
