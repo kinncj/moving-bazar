@@ -10,11 +10,16 @@ class Image extends AbstractController
     	$finfo = new \finfo(FILEINFO_MIME);
     	$mime = $finfo->file($image);
     	header('Content-type: '.$mime);
-    	if (!file_exists('/tmp'.$image)) {
+    	$parts = explode(DIRECTORY_SEPARATOR, $image);
+    	$lastPart = array_pop($image);
+    	$path = implode(DIRECTORY_SEPARATOR, $parts);
+    	$cacheImage = 'cache_'.$lastPart;
+    	$cachePath = $path.'/'.$cacheImage;
+    	if (!file_exists($cachePath)) {
     		$imagick = new \Imagick($image);
     		$imagick->resizeimage(289, 289, \Imagick::FILTER_LANCZOS, true);
-    		$imagick->writeimage(ROOT_PATH.'cache/'.$image);
-    		$image = ROOT_PATH.'cache/'.$image;
+    		$imagick->writeimage($cachePath);
+    		$image = $cachePath;
     	}
     	readfile($image);
     	exit;
