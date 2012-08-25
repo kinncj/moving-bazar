@@ -1,4 +1,4 @@
-About
+About [![Build Status](https://secure.travis-ci.org/kinncj/moving-bazar.png)](http://travis-ci.org/kinncj/moving-bazar)
 ===================
 
  _**Moving Bazar**_ is an Application for persons who are moving and want to sell your things.
