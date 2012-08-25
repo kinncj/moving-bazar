@@ -17,7 +17,7 @@ define('DEBUG', false);
 spl_autoload_register(
     function($className)
     {
-    	$file = 'src/'.str_replace(array('\\', '_'), '/', $className).'.php';
+    	$file = ROOT_PATH.'src/'.str_replace(array('\\', '_'), '/', $className).'.php';
     	require_once "{$file}";
     }
 );
