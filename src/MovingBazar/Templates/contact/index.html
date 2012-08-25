@@ -1,26 +1,25 @@
 {% extends 'base.html' %}
-    {% block content %}
-        <div class="product">   
+    {% block content %}  
            <form action="/contact" method="post">
-            <ul>
-                <li>
-                    <label>Name: </label>
-                    <input type="text" name="name"/>
-                </li>
-                <li>
-                    <label>Email: </label>
-                    <input type="text" name="email"/>
-                </li>
-                <li>
-                    <label>Subject: </label>
-                    <input type="text" name="subject"/>
-                </li>
-                <li>
-                    <label>Message: </label>
-                    <textarea rows="36" cols="60" name="message"></textarea>
-                </li>
-            </ul>
-           </form>
-        </div>
-            
+	           <div class="table"> 
+		            <table>
+		                <tr>
+		                    <td>Name: </td>
+		                    <td><input type="text" name="name"/></td>
+		                </tr>
+		                <tr>
+		                    <td>Email: </td>
+		                    <td><input type="text" name="email"/></td>
+		                </tr>
+		                <tr>
+		                    <td>Subject: </td>
+		                    <td><input type="text" name="subject"/></td>
+		                </tr>
+		                <tr>
+		                    <td>Message: </td>
+		                    <td><textarea rows="36" cols="60" name="message"></textarea></td>
+		                </tr>
+		            </table>
+	            </div>
+           </form>      
     {% endblock %}
