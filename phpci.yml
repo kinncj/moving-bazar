@@ -8,7 +8,5 @@ setup:
         action: "install --dev"
 
 test:
-    php_unit:
-        allow_failures: true
-    php_code_sniffer:
-        standard: "PSR2"
+    exec:
+        command: "cd %buildpath%; make"
