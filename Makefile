@@ -1,2 +1,2 @@
 default:
-	@cd tests;phpunit unit/
+	@cd tests;../vendor/bin/phpunit unit/
