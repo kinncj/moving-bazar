@@ -8,5 +8,5 @@ setup:
         action: "install --dev"
 
 test:
-    exec:
+    shell:
         command: "cd %buildpath%; make"
