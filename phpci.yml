@@ -1,0 +1,16 @@
+build_settings:
+    verbose: true
+    ignore: 
+        - "vendor"
+        - "assets"
+        - "build"
+        - "Tests"
+        - "composer.phar"
+
+setup:
+    composer:
+        action: "install --dev"
+
+test:
+    shell:
+        command: "make test"
