@@ -13,4 +13,4 @@ setup:
 
 test:
     shell:
-        command: "cd %buildpath%; make test"
+        command: "make"
